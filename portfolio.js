@@ -134,14 +134,14 @@ export const experience = [
   {
     role: 'FullStack Developer - Practica Profesional',
     company: 'Departamento de Informática',
-    imagenes: ['/img/imagenes/scg.png', '/img/imagenes/scg2.png'],
+    imagenes: [`${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/scg.png`, `${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/scg2.png`],
     date: 'Abril 2022 – Enero 2023',
     desc: 'Desarrollo de aplicación web para administrar el proceso de Planificación y Control de Gestión en React, Redux, Express (Nodejs), Mysql, AWS (IAM, RDS, EC2, S3, Cloudfront, Route 53), Docker, Webpack, Material UI, JWT.',
   },
   {
     role: 'FullStack Developer - Freelance',
     company: 'Node Quantum',
-    imagenes: ['/img/imagenes/siderval1.png', '/img/imagenes/siderval2.png'],
+    imagenes: [`${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/siderval1.png`, `${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/siderval2.png`],
     date: 'Octubre 2018 – Marzo 2020',
     desc: 'Desarrollador Fullstack en HTML, CSS, Javascript, Nodejs y Mysql. Orientado a desarrollo de portal educativo, y sistema a organización industrial que requiere digitalizar procesos de almacenamiento, producción y administración.',
   },
@@ -159,19 +159,23 @@ export const projects = [
     name: 'Estudiente',
     desc: 'Aplicación móvil que busca presentar un catálogo de tratamientos dentales a bajo costo, impartidos por estudiantes de odontología. Desarrollado en React Native, Django (Python), MongoDB, Firebase (Authentication, OAuth, Cloud Messaging) y AWS (EC2, RDS mysql, Cloudfront).',
     github: 'https://github.com/asantiba/estudiente_feria2019',
-    imagenes: ['/img/imagenes/estudiente1.png', '/img/imagenes/estudiente2.png', '/img/imagenes/estudiente3.png'],
+    imagenes: [
+      `${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/estudiente1.png`,
+      `${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/estudiente2.png`,
+      `${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/estudiente3.png`,
+    ],
   },
   {
     name: 'Sitio Estudiente',
     desc: 'Aplicación web de app Estudiente para informar y promocionar el producto desarrollado. Desarrollado en Javascript, Express, AWS (Ec2, CloudFront)',
     github: 'https://github.com/asantiba/sitio_estudiente',
-    imagenes: ['/img/imagenes/sitioEstudiente.jpg'],
+    imagenes: [`${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/sitioEstudiente.jpg`],
   },
   {
     name: 'Portafolio',
     desc: 'Aplicación web de Portafolio de desarrollador de software. Desarrollado en Reactjs y Nextjs.',
     github: 'https://github.com/asantiba/portafolio',
-    imagenes: ['/img/imagenes/portafolio.png'],
+    imagenes: [`${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/portafolio.png`],
   },
 ]
 

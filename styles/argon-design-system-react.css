@@ -17,7 +17,7 @@
 */
 @font-face {
 	font-family: Augestina;
-	src: url('/fonts/Agustina.otf');
+	src: url(`${process.env.NEXT_PUBLIC_IMAGES}/fonts/Agustina.otf`);
 }
 
 #nav-title {
