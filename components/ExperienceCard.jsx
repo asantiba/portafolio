@@ -1,66 +1,63 @@
-import React from "react";
+import React, { useState, useEffect } from 'react'
 
-import {
-	Card,
-	CardBody,
-	CardTitle,
-	CardSubtitle,
-	CardText,
-	Col,
-} from "reactstrap";
+import { Card, CardBody, CardTitle, CardSubtitle, CardText, Col } from 'reactstrap'
 
-import { Fade } from "react-reveal";
+import { Fade } from 'react-awesome-reveal'
 
 const ExperienceCard = ({ data }) => {
-	return (
-		<Col lg="6">
-			<Fade left duration={2000}>
-				<Card
-					style={{ flex: 1 }}
-					className="shadow-lg--hover mb-3 shadow border-0 text-center rounded"
-				>
-					<CardBody className="">
-						<img
-							src={data.companylogo}
-							style={{
-								objectFit: "cover",
-								left: 0,
-								right: 0,
-								top: "7rem",
-								marginLeft: "auto",
-								marginRight: "auto",
-								width: "8rem",
-								height: "8rem",
-								borderRadius: "50%",
-							}}
-							className="shadow mb-3"
-							alt={data.companylogo}
-						/>
-						<CardTitle tag="h4" className="mb-2">
-							{data.company}
-						</CardTitle>
-						<CardSubtitle tag="h5" className="mb-2">
-							{data.role}
-						</CardSubtitle>
-						<CardSubtitle>{data.date}</CardSubtitle>
-						<CardText
-							tag="div"
-							className="description my-3 text-left"
-						>
-							{data.desc}
-							<ul>
-								{data.descBullets
-									? data.descBullets.map((desc) => {
-											return <li key={desc}>{desc}</li>;
-									  })
-									: null}
-							</ul>
-						</CardText>
-					</CardBody>
-				</Card>
-			</Fade>
-		</Col>
-	);
-};
+  const len = data.imagenes.length
+  const [imagen, setImagen] = useState(0)
+  useEffect(() => {
+    if (len > 0) {
+      setTimeout(() => {
+        setImagen((imagen + 1) % len)
+      }, 4000)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [imagen])
 
-export default ExperienceCard;
+  return (
+    <Col lg='6'>
+      <Fade left duration={2000}>
+        <Card style={{ flex: 1 }} className='shadow-lg--hover mb-3 shadow border-0 text-center rounded'>
+          <CardBody className=''>
+            <CardTitle tag='h4' className='mb-2'>
+              {data.company}
+            </CardTitle>
+            <CardSubtitle tag='h5' className='mb-2'>
+              {data.role}
+            </CardSubtitle>
+            <CardSubtitle>{data.date}</CardSubtitle>
+            {data.imagenes.length > 0 && (
+              <img
+                src={data.imagenes[imagen]}
+                style={{
+                  left: 0,
+                  right: 0,
+                  top: '7rem',
+                  marginLeft: 'auto',
+                  marginRight: 'auto',
+                  width: '20rem',
+                  height: '12rem',
+                }}
+                alt={data.imagenes[imagen]}
+              />
+            )}
+            <CardText tag='div' className='description my-3 text-left'>
+              {data.desc}
+              <ul>
+                {data.descBullets
+                  ? data.descBullets.map((desc) => {
+                      return <li key={desc}>{desc}</li>
+                    })
+                  : null}
+              </ul>
+            </CardText>
+          </CardBody>
+        </Card>
+      </Fade>
+    </Col>
+  )
+}
+
+export default ExperienceCard

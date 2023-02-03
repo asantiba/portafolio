@@ -1,311 +1,187 @@
-import emoji from "react-easy-emoji";
+import animationPathFullstack from './lottie/coding.json'
+import animationPathCloudinfra from './lottie/cloudinfra.json'
 
 export const greetings = {
-	name: "Hanzla Tauqeer",
-	title: "Hi all, I'm Hanzla",
-	description:
-		"I'm passionate Full Stack web developer having an experience of web applications with Python, Django, React.js, Next.js and Blockchain development on Ethereum, Solidity, Web3.js, Moralis, and Brownie Framework.",
-	resumeLink:
-		"https://docs.google.com/document/d/1_4RIfbyt4FFHW_bNplnoINQr01neTu7XDeeUlT_2O_k/edit?usp=sharing",
-};
+  name: 'Alexis Santibanez',
+  title: 'Hola bienvenid@',
+  description: 'Desarrollador Full Stack con experiencia en aplicaciones con React, React Native, Python o Nodejs.',
+  resumeLink: 'https://docs.google.com/document/d/1_4RIfbyt4FFHW_bNplnoINQr01neTu7XDeeUlT_2O_k/edit?usp=sharing',
+}
 
 export const openSource = {
-	githubUserName: "1hanzla100",
-};
+  githubUserName: 'asantiba',
+}
 
-export const contact = {};
+export const contact = {}
 
 export const socialLinks = {
-	url: "https://1hanzla100.github.io/",
-	linkedin: "https://www.linkedin.com/in/1hanzla100/",
-	github: "https://github.com/1hanzla100",
-	instagram: "https://www.instagram.com/__hanzla100",
-	facebook: "https://www.facebook.com/1hanzla100",
-	twitter: "https://twitter.com/1hanzla100",
-};
+  // url: 'https://asantiba.github.io/',
+  linkedin: 'https://www.linkedin.com/in/alexis-santibanez-b59780a6/',
+  github: 'https://github.com/asantiba',
+}
 
 export const skillsSection = {
-	title: "What I do",
-	subTitle:
-		"CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
-	data: [
-		{
-			title: "Full Stack Development",
-			lottieAnimationFile: "/lottie/skills/fullstack.json", // Path of Lottie Animation JSON File
-			skills: [
-				emoji(
-					"⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js"
-				),
-				emoji("⚡ Building responsive static websites using Next.js"),
-				emoji(
-					"⚡ Building RESTful APIs in Django & Django REST Framework"
-				),
-			],
-			softwareSkills: [
-				{
-					skillName: "HTML-5",
-					fontAwesomeClassname: "vscode-icons:file-type-html",
-				},
-				{
-					skillName: "CSS-3",
-					fontAwesomeClassname: "vscode-icons:file-type-css",
-				},
-				{
-					skillName: "JavaScript",
-					fontAwesomeClassname: "logos:javascript",
-				},
-				{
-					skillName: "Reactjs",
-					fontAwesomeClassname: "vscode-icons:file-type-reactjs",
-				},
-				{
-					skillName: "Nextjs",
-					fontAwesomeClassname: "vscode-icons:file-type-light-next",
-				},
-				{
-					skillName: "Python",
-					fontAwesomeClassname: "logos:python",
-				},
-				{
-					skillName: "Django",
-					fontAwesomeClassname: "vscode-icons:file-type-django",
-				},
+  title: '¿Que puedo hacer?',
+  subTitle:
+    'Me desempeño principalmente como desarrollador FULL STACK, sin embargo, me gusta explorar y aprender cualquier área de la ingeniería civil informática.',
+  data: {
+    title: 'Full Stack Development',
+    lottieAnimationFile: animationPathFullstack, // Path of Lottie Animation JSON File
+    skills: [
+      'Desarrollo de sitio web responsivo SPA (Single-Page-Apps) en React, Redux, Javascript, entre otros.',
+      'Desarrollo de aplicación móvil en React Native.',
+      'Desarrollo de API RESTFUL en Framework Express o Django.',
+    ],
+    softwareSkills: [
+      {
+        skillName: 'HTML-5',
+        fontAwesomeClassname: 'vscode-icons:file-type-html',
+      },
+      {
+        skillName: 'CSS-3',
+        fontAwesomeClassname: 'vscode-icons:file-type-css',
+      },
+      {
+        skillName: 'JavaScript',
+        fontAwesomeClassname: 'logos:javascript',
+      },
+      {
+        skillName: 'Reactjs',
+        fontAwesomeClassname: 'vscode-icons:file-type-reactjs',
+      },
+      {
+        skillName: 'React Native',
+        fontAwesomeClassname: 'vscode-icons:file-type-reactjs',
+      },
+      {
+        skillName: 'Redux',
+        fontAwesomeClassname: 'logos:redux',
+      },
+      {
+        skillName: 'Python',
+        fontAwesomeClassname: 'logos:python',
+      },
+      {
+        skillName: 'Django',
+        fontAwesomeClassname: 'vscode-icons:file-type-django',
+      },
+      {
+        skillName: 'CUDA',
+        fontAwesomeClassname: 'vscode-icons:file-type-cuda',
+      },
+      {
+        skillName: 'PHP',
+        fontAwesomeClassname: 'logos:php',
+      },
+      {
+        skillName: 'Material UI',
+        fontAwesomeClassname: 'logos:material-ui',
+      },
+      {
+        skillName: 'React Bootstrap 5',
+        fontAwesomeClassname: 'logos:bootstrap',
+      },
+    ],
+  },
+}
 
-				{
-					skillName: "Redux",
-					fontAwesomeClassname: "logos:redux",
-				},
-				{
-					skillName: "NPM",
-					fontAwesomeClassname: "logos:npm-icon",
-				},
-				{
-					skillName: "Yarn",
-					fontAwesomeClassname: "logos:yarn",
-				},
-			],
-		},
-		{
-			title: "Cloud Infra-Architecture",
-			lottieAnimationFile: "/lottie/skills/cloudinfra.json", // Path of Lottie Animation JSON File
-			skills: [
-				emoji("⚡ Experience of working on multiple cloud platforms"),
-				emoji(
-					"⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases"
-				),
-				emoji(
-					"⚡ Building CI/CD pipelines for automated testing & deployment using Github Actions"
-				),
-			],
-			softwareSkills: [
-				// ? Check README To get icon details
-				{
-					skillName: "AWS",
-					fontAwesomeClassname: "logos:aws",
-				},
-				{
-					skillName: "Azure",
-					fontAwesomeClassname: "logos:microsoft-azure",
-				},
-				{
-					skillName: "Heroku",
-					fontAwesomeClassname: "logos:heroku-icon",
-				},
-				{
-					skillName: "PostgreSQL",
-					fontAwesomeClassname: "logos:postgresql",
-				},
-				{
-					skillName: "Github",
-					fontAwesomeClassname: "akar-icons:github-fill",
-				},
-				{
-					skillName: "Docker",
-					fontAwesomeClassname: "logos:docker-icon",
-				},
-				{
-					skillName: "Github Actions",
-					fontAwesomeClassname: "logos:github-actions",
-				},
-				{
-					skillName: "Cloudinary",
-					fontAwesomeClassname: "logos:cloudinary",
-				},
-				{
-					skillName: "Nginx",
-					fontAwesomeClassname: "logos:nginx",
-				},
-				{
-					skillName: "Sentry",
-					fontAwesomeClassname: "logos:sentry-icon",
-				},
-			],
-		},
-		{
-			title: "Blockchain",
-			lottieAnimationFile: "/lottie/skills/ethereum.json", // Path of Lottie Animation JSON File
-			skills: [
-				emoji(
-					"⚡ Experience in developing Smart Contract using Solidity & Ethereum"
-				),
-				emoji(
-					"⚡ Building Scripts for automated testing & deployment of Smart Contracts using Brownie & Infura"
-				),
-				emoji(
-					"⚡ Experience of using Openzeppelin Smart Contract Standards & Chainlink Oracles"
-				),
-				emoji(
-					"⚡ Developing NFT Smart Contracts using ERC-721 Token Standard"
-				),
-				emoji(
-					"⚡ Building Dapps with React.js & Solidity using Web3.js, Moralis & IPFS"
-				),
-			],
-			softwareSkills: [
-				{
-					skillName: "Ethereum",
-					fontAwesomeClassname: "logos:ethereum",
-				},
-				{
-					skillName: "Solidity",
-					fontAwesomeClassname: "logos:solidity",
-				},
-				{
-					skillName: "Web3js",
-					fontAwesomeClassname: "logos:web3js",
-				},
-				{
-					skillName: "Metamask",
-					fontAwesomeClassname: "logos:metamask-icon",
-				},
-				{
-					skillName: "Ganache",
-					fontAwesomeClassname: "logos:ganache-icon",
-				},
-			],
-		},
-	],
-};
-
-export const SkillBars = [
-	{
-		Stack: "Frontend/Design", //Insert stack or technology you have experience in
-		progressPercentage: "90", //Insert relative proficiency in percentage
-	},
-	{
-		Stack: "Backend",
-		progressPercentage: "70",
-	},
-	{
-		Stack: "Programming",
-		progressPercentage: "60",
-	},
-];
+export const cloudSkillsSection = {
+  title: 'Cloud Infra-Architecture',
+  lottieAnimationFile: animationPathCloudinfra, // Path of Lottie Animation JSON File
+  skills: [
+    'Experiencia en Google Cloud Platforms y Amazon Web Services.',
+    'Hosting y mantención de sitio web en instancia con integración de base de datos.',
+  ],
+  softwareSkills: [
+    // ? Check README To get icon details
+    {
+      skillName: 'AWS',
+      fontAwesomeClassname: 'logos:aws',
+    },
+    {
+      skillName: 'Google Cloud Platform',
+      fontAwesomeClassname: 'vscode-icons:file-type-gcloud',
+    },
+    {
+      skillName: 'MySQL',
+      fontAwesomeClassname: 'logos:mysql',
+    },
+    {
+      skillName: 'Mongodb',
+      fontAwesomeClassname: 'logos:mongodb',
+    },
+    {
+      skillName: 'Github',
+      fontAwesomeClassname: 'akar-icons:github-fill',
+    },
+    {
+      skillName: 'Docker',
+      fontAwesomeClassname: 'logos:docker-icon',
+    },
+  ],
+}
 
 export const educationInfo = [
-	{
-		schoolName: "Harvard University",
-		subHeader: "Master of Science in Computer Science",
-		duration: "September 2017 - April 2019",
-		desc: "Participated in the research of XXX and published 3 papers.",
-		grade: "Grade A",
-		descBullets: [
-			"Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit",
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		],
-	},
-];
+  {
+    schoolName: 'Universidad Técnica Federico Santa María',
+    subHeader: 'Ingeniería Civil Informática',
+    duration: 'Marzo 2014 - Julio 2021',
+    desc: 'Egresado en Ingeniería civil informática, en proceso de titulación (fecha estimada examen de grado: marzo).',
+  },
+]
 
 export const experience = [
-	{
-		role: "Frontend Developer",
-		company: "Duseca Software",
-		companylogo: "/img/icons/common/dusecaSoftware.jpg",
-		date: "Apr 2022 – Jun 2022",
-		desc: "I worked as frontend web developer to design web based admin dashboards for mulitple apps using Django, Bootstrap, jQuery, Chart.js and some other libraries.",
-	},
-	{
-		role: "API Engineer",
-		company: "Duseca Software",
-		companylogo: "/img/icons/common/dusecaSoftware.jpg",
-		date: "Jan 2022 – Mar 2022",
-		desc: "I worked as API Engineer on a Kale App. Kale is a community platform for the creation of social reviews based on verified transactions. I built Fully Optimized and High Performance RESTful APIs using Django, DjangoRESTFramework, PostgresSQL, JWT Authentication, AWS, Integrated Plaid APIs for Fetching Bank Transactions, Integrated Sentry for monitoring Django Server and deployed the API on Heroku Server.",
-		// descBullets: [
-		// 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
-		// 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		// ],
-	},
-	{
-		role: "Full Stack Developer",
-		company: "Bleed-AI",
-		companylogo: "/img/icons/common/bleedAI.jpg",
-		date: "Sept 2021 - Oct 2021",
-		desc: "Worked as django web developer to create a website in which I integrated computer vision AI model (built by the team of BleedAI) to process YouTube URLs and show Real Time processing on Website using Django Channels WebSockets , threading for running multiple instances of AI Model, jQuery for UI rendering and deployed it on Heroku server.",
-	},
-	{
-		role: "Backend Developer",
-		company: "Wapidu",
-		companylogo: "/img/icons/common/wapidu.jpg",
-		date: "Sept 2021",
-		desc: "Worked as a Django Developer to integrate Stripe payment gateway in wapidu.com and Created REST APIs using Django REST Framework to integrate Django Stripe backend to Vue.js Frontend and Deployed it on Azure based Docker container registry.",
-	},
-];
+  {
+    role: 'FullStack Developer - Practica Profesional',
+    company: 'Departamento de Informática',
+    imagenes: ['/img/imagenes/scg.png', '/img/imagenes/scg2.png'],
+    date: 'Abril 2022 – Enero 2023',
+    desc: 'Desarrollo de aplicación web para administrar el proceso de Planificación y Control de Gestión en React, Redux, Express (Nodejs), Mysql, AWS (IAM, RDS, EC2, S3, Cloudfront, Route 53), Docker, Webpack, Material UI, JWT.',
+  },
+  {
+    role: 'FullStack Developer - Freelance',
+    company: 'Node Quantum',
+    imagenes: ['/img/imagenes/siderval1.png', '/img/imagenes/siderval2.png'],
+    date: 'Octubre 2018 – Marzo 2020',
+    desc: 'Desarrollador Fullstack en HTML, CSS, Javascript, Nodejs y Mysql. Orientado a desarrollo de portal educativo, y sistema a organización industrial que requiere digitalizar procesos de almacenamiento, producción y administración.',
+  },
+  {
+    role: 'Software Developer - Práctica Industrial',
+    company: 'Mindfree Ingeniería',
+    imagenes: [],
+    date: 'Enero 2018 – Marzo 2018',
+    desc: 'Desarrollo en PHP, Laravel, Mysql. Enfocado a entregar soluciones en plataformas educacionales en Moodle, en Práctica Industrial.',
+  },
+]
 
 export const projects = [
-	{
-		name: "developer-portfolio",
-		desc: "Software Developer Portfolio Template built with react.js and next.js bootstrap that helps you showcase your work and skills as a software developer.",
-		github: "https://github.com/1hanzla100/developer-portfolio",
-		link: "https://developer-portfolio-1hanzla100.vercel.app/",
-	},
-	{
-		name: "AtlasMart",
-		desc: "With Atlas Mart, it’s easy to find the products with the best price and ship them straight to your door.",
-		github: "https://github.com/1hanzla100/Django-React-Marketplace",
-	},
-	{
-		name: "Technota (Forum)",
-		desc: "Get hands-on experience in technical skills with Technota",
-		github: "https://github.com/1hanzla100/django-react-forum",
-	},
-	{
-		name: "Shopaza (Ecommerce)",
-		desc: "Now your reach to all your favorite entertainment and luxury items is just one touch apart",
-		github: "https://github.com/1hanzla100/Django-ecommerce",
-	},
-];
-
-export const feedbacks = [
-	{
-		name: "John Smith",
-		feedback:
-			"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, vel illo. Eum magnam beatae ratione eos natus accusamus unde pariatur fugiat at facilis, modi molestiae? Labore odio sit eligendi. Tenetur.",
-	},
-	{
-		name: "John Smith",
-		feedback:
-			"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, vel illo. Eum magnam beatae ratione eos natus accusamus unde pariatur fugiat at facilis, modi molestiae? Labore odio sit eligendi. Tenetur.",
-	},
-];
-
-// option to hide or show the ContactUs component
-export const showContactUs = true;
+  {
+    name: 'Estudiente',
+    desc: 'Aplicación móvil que busca presentar un catálogo de tratamientos dentales a bajo costo, impartidos por estudiantes de odontología. Desarrollado en React Native, Django (Python), MongoDB, Firebase (Authentication, OAuth, Cloud Messaging) y AWS (EC2, RDS mysql, Cloudfront).',
+    github: 'https://github.com/asantiba/estudiente_feria2019',
+    imagenes: ['/img/imagenes/estudiente1.png', '/img/imagenes/estudiente2.png', '/img/imagenes/estudiente3.png'],
+  },
+  {
+    name: 'Sitio Estudiente',
+    desc: 'Aplicación web de app Estudiente para informar y promocionar el producto desarrollado. Desarrollado en Javascript, Express, AWS (Ec2, CloudFront)',
+    github: 'https://github.com/asantiba/sitio_estudiente',
+    imagenes: ['/img/imagenes/sitioEstudiente.jpg'],
+  },
+  {
+    name: 'Portafolio',
+    desc: 'Aplicación web de Portafolio de desarrollador de software. Desarrollado en Reactjs y Nextjs.',
+    github: 'https://github.com/asantiba/portafolio',
+    imagenes: ['/img/imagenes/portafolio.png'],
+  },
+]
 
 // See object prototype on SEO.jsx page
 export const seoData = {
-	title: "Hanzla Tauqeer",
-	description:
-		"A passionate Full Stack Web Developer and Blockchain Developer.",
-	author: "Hanzla Tauqeer",
-	image: "https://avatars3.githubusercontent.com/u/59178380?v=4",
-	url: "https://developer-portfolio-1hanzla100.vercel.app",
-	keywords: [
-		"Hanzla",
-		"Hanzla Tauqeer",
-		"@1hanzla100",
-		"1hanzla100",
-		"Portfolio",
-		"Hanzla Portfolio ",
-		"Hanzla Tauqeer Portfolio",
-	],
+  title: 'Alexis Santibáñez',
+  description:
+    'Soy desarrollador Full Stack con experiencia en aplicaciones con Javascript, React, React Native, Python con framework Django, y/o Nodejs con framework Express.',
+  author: 'Alexis Santibáñez',
+  image: 'https://avatars3.githubusercontent.com/u/59178380?v=4',
+  url: 'https://github.com/asantiba',
+  keywords: ['Portafolio'],
 }

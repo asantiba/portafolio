@@ -1,18 +1,12 @@
-import React from "react";
-import Lottie from "react-lottie";
+import React, { useState, useEffect } from 'react'
+import { Player } from '@lottiefiles/react-lottie-player'
 
-const GreetingLottie = ({ animationPath }) => {
-	const defaultOptions = {
-		loop: true,
-		autoplay: true,
-		path: animationPath,
-	};
+const GreetingLottie = ({ animationPath, speed = 0.2, style = { width: '600px', height: '600px' } }) => {
+  return (
+    <div onClick={() => null}>
+      <Player src={animationPath} autoplay loop speed={speed} style={style} />
+    </div>
+  )
+}
 
-	return (
-		<div onClick={() => null}>
-			<Lottie options={defaultOptions} />
-		</div>
-	);
-};
-
-export default GreetingLottie;
+export default GreetingLottie
