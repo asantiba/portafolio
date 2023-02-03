@@ -1,16 +1,18 @@
 {
   "name": "portafolio",
   "version": "1.0.0",
-  "description": "Portfolio desarrollador web construido con react.js y nextjs.",
+  "description": "Portafolio desarrollador web construido con react.js y nextjs.",
   "main": "index.js",
   "repository": "https://github.com/asantiba/portafolio.git",
+  "homepage": "https://asantiba.github.io/portafolio/",
   "author": "Alexis",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "@apollo/client": "^3.7.6",
@@ -36,6 +38,7 @@
   },
   "devDependencies": {
     "eslint": "8.33.0",
-    "eslint-config-next": "13.1.6"
+    "eslint-config-next": "13.1.6",
+    "gh-pages": "^5.0.0"
   }
 }
