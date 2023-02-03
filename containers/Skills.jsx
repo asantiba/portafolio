@@ -8,7 +8,6 @@ import { cloudSkillsSection } from '../portfolio'
 
 const Skills = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const [isOpenSkill, setIsOpenSkill] = useState(false)
   const [isOpenCloud, setIsOpenCloud] = useState(false)
 
   return (
