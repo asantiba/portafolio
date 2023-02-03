@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import { greetings, socialLinks } from '../portfolio'
 import GreetingLottie from '../components/DisplayLottie'
 import animationPath from '../lottie/nav.json'
-import Headroom from 'headroom.js'
+import Headroom from 'react-headroom'
 import Link from 'next/link'
 import { UncontrolledCollapse, NavbarBrand, Navbar, NavItem, NavLink, Nav, Container, Row, Col } from 'reactstrap'
 
