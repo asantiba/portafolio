@@ -134,14 +134,14 @@ export const experience = [
   {
     role: 'FullStack Developer - Practica Profesional',
     company: 'Departamento de Informática',
-    imagenes: [`${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/scg.png`, `${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/scg2.png`],
+    imagenes: [`${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/scg11.png`, `${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/scg22.png`],
     date: 'Abril 2022 – Enero 2023',
     desc: 'Desarrollo de aplicación web para administrar el proceso de Planificación y Control de Gestión en React, Redux, Express (Nodejs), Mysql, AWS (IAM, RDS, EC2, S3, Cloudfront, Route 53), Docker, Webpack, Material UI, JWT.',
   },
   {
     role: 'FullStack Developer - Freelance',
     company: 'Node Quantum',
-    imagenes: [`${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/siderval1.png`, `${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/siderval2.png`],
+    imagenes: [`${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/siderval11.png`, `${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/siderval22.png`],
     date: 'Octubre 2018 – Marzo 2020',
     desc: 'Desarrollador Fullstack en HTML, CSS, Javascript, Nodejs y Mysql. Orientado a desarrollo de portal educativo, y sistema a organización industrial que requiere digitalizar procesos de almacenamiento, producción y administración.',
   },
@@ -160,9 +160,9 @@ export const projects = [
     desc: 'Aplicación móvil que busca presentar un catálogo de tratamientos dentales a bajo costo, impartidos por estudiantes de odontología. Desarrollado en React Native, Django (Python), MongoDB, Firebase (Authentication, OAuth, Cloud Messaging) y AWS (EC2, RDS mysql, Cloudfront).',
     github: 'https://github.com/asantiba/estudiente_feria2019',
     imagenes: [
-      `${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/estudiente1.png`,
-      `${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/estudiente2.png`,
-      `${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/estudiente3.png`,
+      `${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/estudiente11.png`,
+      `${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/estudiente22.png`,
+      `${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/estudiente33.png`,
     ],
   },
   {
@@ -175,7 +175,7 @@ export const projects = [
     name: 'Portafolio',
     desc: 'Aplicación web de Portafolio de desarrollador de software. Desarrollado en Reactjs y Nextjs.',
     github: 'https://github.com/asantiba/portafolio',
-    imagenes: [`${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/portafolio.png`],
+    imagenes: [`${process.env.NEXT_PUBLIC_IMAGES}/img/imagenes/portafolio11.png`],
   },
 ]
 
